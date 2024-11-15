@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oauth2.0 on Hugoplate</title>
+    <link>//localhost:1313/tags/oauth2.0/</link>
+    <description>Recent content in Oauth2.0 on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/oauth2.0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oauth2.0授权协议</title>
+      <link>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;定义&#34;&gt;定义&lt;/h1&gt;&#xA;&lt;p&gt;OAuth2.0是一种授权协议，&lt;strong&gt;允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源&lt;/strong&gt;,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。&lt;/p&gt;&#xA;&lt;h1 id=&#34;oauth20中的重点概念&#34;&gt;OAuth2.0中的重点概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;资源所有者&lt;/strong&gt;：&lt;strong&gt;Resource Owner(RO)&lt;/strong&gt;： 拥有受保护资源的实体，通常指终端用户。&#xA;&lt;strong&gt;资源服务器&lt;/strong&gt;：&lt;strong&gt;Resource Server（RS）&lt;/strong&gt; 资源的存储位置。&#xA;&lt;strong&gt;客户端&lt;/strong&gt;：&lt;strong&gt;client&lt;/strong&gt; 请求访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权服务器&lt;/strong&gt;：&lt;strong&gt;authorization server(AS)&lt;/strong&gt; 验证资源身份者，颁发令牌。多数情况下授权服务器需要验证资源拥有者身份，授权服务器也要提供认证功能。&#xA;&lt;strong&gt;授权令牌&lt;/strong&gt;: &lt;strong&gt;Access Token（AT）&lt;/strong&gt; 授权服务器提供给客户端访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权许可&lt;/strong&gt;：&lt;strong&gt;Authorization Grant&lt;/strong&gt; 是资源拥有者授权给客户端的一个凭据，表明资源拥有者同意客户端代表他访问受保护的资源。授权许可的类型包括授权码、隐式授权、资源拥有者密码凭据和客户端凭据。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugoplate</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oauth2.0授权协议</title>
+      <link>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;定义&#34;&gt;定义&lt;/h1&gt;&#xA;&lt;p&gt;OAuth2.0是一种授权协议，&lt;strong&gt;允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源&lt;/strong&gt;,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。&lt;/p&gt;&#xA;&lt;h1 id=&#34;oauth20中的重点概念&#34;&gt;OAuth2.0中的重点概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;资源所有者&lt;/strong&gt;：&lt;strong&gt;Resource Owner(RO)&lt;/strong&gt;： 拥有受保护资源的实体，通常指终端用户。&#xA;&lt;strong&gt;资源服务器&lt;/strong&gt;：&lt;strong&gt;Resource Server（RS）&lt;/strong&gt; 资源的存储位置。&#xA;&lt;strong&gt;客户端&lt;/strong&gt;：&lt;strong&gt;client&lt;/strong&gt; 请求访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权服务器&lt;/strong&gt;：&lt;strong&gt;authorization server(AS)&lt;/strong&gt; 验证资源身份者，颁发令牌。多数情况下授权服务器需要验证资源拥有者身份，授权服务器也要提供认证功能。&#xA;&lt;strong&gt;授权令牌&lt;/strong&gt;: &lt;strong&gt;Access Token（AT）&lt;/strong&gt; 授权服务器提供给客户端访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权许可&lt;/strong&gt;：&lt;strong&gt;Authorization Grant&lt;/strong&gt; 是资源拥有者授权给客户端的一个凭据，表明资源拥有者同意客户端代表他访问受保护的资源。授权许可的类型包括授权码、隐式授权、资源拥有者密码凭据和客户端凭据。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Elements</title>
+      <link>//localhost:1313/elements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/elements/</guid>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      摘要&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-3&#34;&gt;Heading 3&lt;/a&gt;&#xA;          &lt;ol&gt;&#xA;            &lt;li&gt;&lt;a href=&#34;#heading-4&#34;&gt;Heading 4&lt;/a&gt;&#xA;              &lt;ol&gt;&#xA;                &lt;li&gt;&lt;a href=&#34;#heading-5&#34;&gt;Heading 5&lt;/a&gt;&lt;/li&gt;&#xA;              &lt;/ol&gt;&#xA;            &lt;/li&gt;&#xA;          &lt;/ol&gt;&#xA;        &lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#button&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#link&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#paragraph&#34;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#ordered-list&#34;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#unordered-list&#34;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#notice&#34;&gt;Notice&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tab&#34;&gt;Tab&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#accordions&#34;&gt;Accordions&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;Blockquote&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#image&#34;&gt;Image&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#slider&#34;&gt;Slider&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#youtube-video&#34;&gt;Youtube video&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#custom-video&#34;&gt;Custom video&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Privacy</title>
+      <link>//localhost:1313/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/privacy-policy/</guid>
+      <description>&lt;h4 id=&#34;responsibility-of-contributors&#34;&gt;Responsibility of Contributors&lt;/h4&gt;&#xA;&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ready to build your next project with Hugo?</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What Users Are Saying About Hugoplate</title>
+      <link></link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid></guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

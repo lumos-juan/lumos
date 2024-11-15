@@ -1,0 +1,58 @@
+
+# main menu
+[[main]]
+name = "主页"
+url = "/"
+weight = 1
+
+[[main]]
+name = "关于我"
+url = "/about"
+weight = 2
+
+#[[main]]
+#name = "Elements"
+#url = "/elements"
+#weight = 3
+
+[[main]]
+weight = 4
+name = "博客"
+
+
+[[main]]
+parent = "博客"
+name = "认证相关"
+url = "/blog/auth"
+
+#[[main]]
+#parent = "博客"
+#name = "Authors"
+#url = "/authors"
+
+[[main]]
+parent = "博客"
+name = "目录"
+url = "/categories"
+
+#[[main]]
+#parent = "博客"
+#name = "404 Page"
+#url = "/404"
+
+
+# footer menu
+[[footer]]
+name = "关于我"
+url = "/about"
+weight = 1
+
+#[[footer]]
+#name = "Elements"
+#url = "/elements"
+#weight = 2
+
+#[[footer]]
+#name = "Privacy Policy"
+#url = "/privacy-policy"
+#weight = 3
