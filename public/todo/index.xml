@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>待办 on 八原妖怪大集合</title>
+    <link>//localhost:1313/todo/</link>
+    <description>Recent content in 待办 on 八原妖怪大集合</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <atom:link href="//localhost:1313/todo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>待办事项</title>
+      <link>//localhost:1313/todo/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/todo/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</guid>
+      <description>&lt;h2 id=&#34;想看的电影动漫&#34;&gt;想看的电影/动漫&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 精灵王座&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 壁花少年&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 死神&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;想看的书&#34;&gt;想看的书&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 嫌疑人X的献身  &amp;ndash; 2024-11-18&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 危险的维纳斯&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 小王子&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;要学的技术&#34;&gt;要学的技术&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; go&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; spring cloud&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;要做的事&#34;&gt;要做的事&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 整理面试过的题目&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 献血&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 杂谈：游戏与词句&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

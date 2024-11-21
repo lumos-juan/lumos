@@ -1,10 +1,21 @@
 // table of contents
 .table-of-content {
   @apply overflow-hidden rounded;
-}
+  summary{
+    display: none
+  }
+  #TableOfContents{
+    background:none;
+    ul{
+      // border-left: 1px solid gray;
 
+    }
+  }
+
+}
 // share icons
 .share-icons {
+  display: none;
   .share-link {
     @apply h-9 w-9 rounded leading-9;
     @apply bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary;
@@ -55,4 +66,8 @@
 // slider
 .gallery-slider {
   @apply ml-0 #{!important};
+}
+
+html{
+  scroll-padding-top: 100px!important;
 }

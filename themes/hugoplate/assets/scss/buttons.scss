@@ -24,3 +24,38 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.img-rounded {
+  border-radius: 10px; 
+  border: 5px solid gray;
+}
+
+
+.main-img {
+  border-radius: 20px;
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Flexbox 容器样式 */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 目录容器样式 */
+.toc-container {
+  flex: 1; 
+  max-width: 300px; 
+  margin-left: 60px; 
+
+}
+
+/* 内容容器样式 */
+.content-container {
+  flex: 3; 
+  width: 75%;
+
+}

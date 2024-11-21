@@ -1,28 +1,30 @@
-
-
 ---
 title: "Oauth2.0授权协议"
 meta_title: ""
 description: "OAuth2.0是一种授权协议，**允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源**,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。"
-date: 2022-04-04T05:00:00Z
-image: "/images/image-placeholder.png"
-categories: ["认证", "协议"]
+date: 2024-11-21T05:00:00Z
+image: "/images/auth/oauth2.0-header.png"
+categories: ["授权", "协议"]
 author: "Gavain Juan"
 tags: ["Oauth2.0", "授权"]
 draft: false
 ---
-
 # 定义
 
 OAuth2.0是一种授权协议，**允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源**,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。
 
-# OAuth2.0中的重点概念
+# 重点概念
 
 **资源所有者**：**Resource Owner(RO)**： 拥有受保护资源的实体，通常指终端用户。
+
 **资源服务器**：**Resource Server（RS）** 资源的存储位置。
+
 **客户端**：**client** 请求访问受保护资源的第三方应用。
+
 **授权服务器**：**authorization server(AS)** 验证资源身份者，颁发令牌。多数情况下授权服务器需要验证资源拥有者身份，授权服务器也要提供认证功能。
+
 **授权令牌**: **Access Token（AT）** 授权服务器提供给客户端访问受保护资源的第三方应用。
+
 **授权许可**：**Authorization Grant** 是资源拥有者授权给客户端的一个凭据，表明资源拥有者同意客户端代表他访问受保护的资源。授权许可的类型包括授权码、隐式授权、资源拥有者密码凭据和客户端凭据。
 
 ## 整体流程
@@ -40,7 +42,7 @@ OAuth2.0是一种授权协议，**允许第三方应用在用户授权的情况�
 
 OAuth2.0支持四种授权方式，以适应不同的场景。
 
-## 新增概念：
+## 新增概念
 
 客户端凭据（Client Credentials）授权服务器验证客户端身份的凭证，通常是ClientId&ClientSecret
 
@@ -61,13 +63,16 @@ OAuth2.0支持四种授权方式，以适应不同的场景。
 - **redirect_uri**：必填，指定授权服务器在完成用户认证和授权后应该重定向用户的URI。这个URI必须在客户端注册时提供给授权服务器。
 - **scope**：选填，用于指定客户端请求的权限范围。例如，`read`或 `write`等。
 - **state**：推荐，用于防止跨站请求伪造（CSRF）攻击。客户端生成一个随机值，并在授权请求中发送。授权服务器在重定向回客户端时应该原样返回这个值，客户端可以验证它以确认响应是来自预期的授权请求。
-  **请求示例如下**：
+
+  **请求示例**
 
 ```http
-GET /authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=https%3A%2F%2Fclient.example.com%2Fcallback&scope=read%20write&state=xyz HTTP/1.1 Host: authorization-server.com
+GET /authorize?response_type=code&client_id=CLIENT_ID&redirect_uri=https%3A%2F%2Fclient.example.com%2Fcallback&scope=read%20write&state=xyz HTTP/1.1
+Host: authorization-server.com
+
 ```
 
- **返回结果示例如下:**
+ **返回结果**
 对应第四步授权服务器携带着授权码重定向到第三方应用
 
 ```http
@@ -82,7 +87,7 @@ https://client.example.com/callback?code=SplxlOBeZQQYbYS6WxSbIA&state=xyz
 - **redirect_uri**：必填，在用户授权时使用的重定向URI，必须与获取授权码时使用的重定向URI相同。
 - **client_id**：必填，客户端应用的ID，这是在应用注册授权服务器时获得的。
 - **client_secret**：推荐，通常情况客户端应用的密钥，这是在应用注册授权服务器时获得的。某些授权服务器可能要求在请求访问令牌时提供这个参数，以提高安全性。
-  请求示例如下
+  **请求示例**
 
 ```http
 POST /token HTTP/1.1
@@ -96,7 +101,7 @@ redirect_uri=REDIRECT_URI
 
 ```
 
-响应示例：
+**响应示例**：
 
 ```http
 HTTP/1.1 200 OK
@@ -133,14 +138,15 @@ Content-Type: application/json;charset=UTF-8
 - redirect_uri: 用户授权后授权服务器重定向到的URI。
 - scope: 客户端请求的权限范围。
 - state: 客户端生成的一个随机字符串，用于防止跨站请求伪造（CSRF）攻击。
-  请求示例
+
+  **请求示例**
 
 ```http
 GET /authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=https://client-app.com/callback&scope=read_profile&state=随机字符串 HTTP/1.1
 Host: authorization-server.com
 ```
 
-响应示例
+    **响应示例**
 
 ```http
 HTTP/1.1 302 Found
@@ -162,7 +168,8 @@ Location: https://client-app.com/callback#access_token=ACCESS_TOKEN&token_type=b
 
 ![密码模式](/images/auth/Oauth2.0%20授权协议-密码模式.png)
 步骤上重点在于第二步，第三方应用需要拿着用户的用户名密码去请求token。
-**请求示例如下**：
+
+**请求示例**：
 
 ```http
 POST /token HTTP/1.1
@@ -173,7 +180,7 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=password&username=USER&password=PASSWORD&scope=read
 ```
 
-**响应示例如下**：
+**响应示例**：
 
 ```http
 HTTP/1.1 200 OK 
@@ -203,18 +210,19 @@ Content-Type: application/json;charset=UTF-8
 ![凭证授权](/images/auth/Oauth2.0%20授权协议-凭证授权.png)
 重点关注第二步，客户端使用其 client_id 和 client_secret 向授权服务器发送请求，请求一个访问令牌。这个请求通常不需要用户参与。
 
-请求示例如下
+**请求示例**
 
 ```http
-POST /token HTTP/1.1 
-Host: authorization-server.com 
-Authorization: Basic base64encode(client_id:client_secret) 
-Content-Type: application/x-www-form-urlencoded 
+POST /token HTTP/1.1
+Host: authorization-server.com
+Authorization: Basic base64encode(client_id:client_secret)
+Content-Type: application/x-www-form-urlencoded
 
 grant_type=client_credentials
+
 ```
 
-响应示例如下：
+**响应示例**
 
 ```http
 HTTP/1.1 200 OK 
@@ -246,15 +254,27 @@ Pragma: no-cache
 # 参考
 
 [Oauth2.0](https://juejin.cn/post/7195762258962219069)
+
 [OAuth2.0 vs OIDC](https://zhuanlan.zhihu.com/p/620872500)
+
 [Oauth2.0四种模式的场景](https://zhuanlan.zhihu.com/p/375154660)
+
 [Oauth2.0](https://juejin.cn/post/7276330110835458103?searchId=20241017095434C6D32D1D51DBDA55F5B5)
+
 [开放平台鉴权以及OAuth2.0介绍 - duanxz - 博客园 (cnblogs.com)](https://www.cnblogs.com/duanxz/p/4369738.html)
+
 [帮你深入理解OAuth2.0协议_SecCloud的专栏-CSDN博客_oauth2.0协议](https://blog.csdn.net/seccloud/article/details/8192707)
+
 [OAuth2.0协议 - 简书 (jianshu.com)](https://www.jianshu.com/p/2f9d9014fbb6)
+
 [Oauth2.0 协议到底是干什么的？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/49424214)
+
 [OAuth 2.0 的一个简单解释 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
+
 [OAuth 2.0 的四种方式 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2019/04/oauth-grant-types.html)
+
 [GitHub OAuth 第三方登录示例教程 - 阮一峰的网络日志 (ruanyifeng.com)](https://www.ruanyifeng.com/blog/2019/04/github-oauth.html)
+
 [深入理解OAuth2.0 - duanxz - 博客园 (cnblogs.com)](https://www.cnblogs.com/duanxz/p/4022459.html)
+
 [OAuth 的权限问题与信息隐忧 - duanxz - 博客园 (cnblogs.com)](https://www.cnblogs.com/duanxz/p/4022752.html)

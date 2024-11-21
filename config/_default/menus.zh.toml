@@ -10,6 +10,13 @@ name = "关于我"
 url = "/about"
 weight = 2
 
+[[main]]
+name = "技能树"
+url = "/skill/技能树"
+weight = 3
+
+
+
 #[[main]]
 #name = "Elements"
 #url = "/elements"
@@ -19,11 +26,39 @@ weight = 2
 weight = 4
 name = "博客"
 
+[[main]]
+name = "待办事项"
+url = "/todo/待办事项"
+weight = 5
+
+#[[main]]
+#name = "杂谈"
+#url = "/blog/杂谈"
+#weight = 6
+
+[[main]]
+parent = "杂谈"
+name = "模仿者"
+url = "/blog/杂谈/模仿者"
+[[main]]
+parent = "杂谈"
+name = "词句"
+url = "/blog/杂谈/词句"
+
+#[[main]]
+#parent = "杂谈"
+#name = "词句"
+#url = "/blog/杂谈/词句"
 
 [[main]]
 parent = "博客"
 name = "认证相关"
 url = "/blog/auth"
+
+[[main]]
+parent = "博客"
+name = "数据库"
+url = "/blog/数据库相关"
 
 #[[main]]
 #parent = "博客"

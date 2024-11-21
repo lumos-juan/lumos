@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -139,7 +140,29 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    text-overflow: ellipsis; } }
+    text-overflow: ellipsis; }
+  .img-rounded {
+    border-radius: 10px;
+    border: 5px solid gray; }
+  .main-img {
+    border-radius: 20px;
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    margin: 0 auto; }
+  /* Flexbox 容器样式 */
+  .flex {
+    display: flex;
+    flex-wrap: wrap; }
+  /* 目录容器样式 */
+  .toc-container {
+    flex: 1;
+    max-width: 300px;
+    margin-left: 60px; }
+  /* 内容容器样式 */
+  .content-container {
+    flex: 3;
+    width: 75%; } }
 
 @layer utilities {
   .bg-gradient {
@@ -947,13 +970,18 @@
 
 .table-of-content {
   @apply overflow-hidden rounded; }
+  .table-of-content summary {
+    display: none; }
+  .table-of-content #TableOfContents {
+    background: none; }
 
-.share-icons .share-link {
-  @apply h-9 w-9 rounded leading-9;
-  @apply bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary; }
-
-.share-icons .share-icon svg {
-  @apply dark:fill-dark; }
+.share-icons {
+  display: none; }
+  .share-icons .share-link {
+    @apply h-9 w-9 rounded leading-9;
+    @apply bg-primary hover:bg-primary dark:bg-darkmode-primary dark:hover:bg-darkmode-primary; }
+  .share-icons .share-icon svg {
+    @apply dark:fill-dark; }
 
 .notice {
   @apply rounded-lg; }
@@ -979,3 +1007,6 @@
 
 .gallery-slider {
   @apply ml-0 !important; }
+
+html {
+  scroll-padding-top: 100px !important; }

@@ -40,9 +40,16 @@
               {{ time.Format ":date_long" .PublishDate }}
             </li>
           </ul>
-          <div class="content mb-10">
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
-            {{ .Content }}
+          <div class="content mb-10 flex">
+            <!-- {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            {{ .Content }} -->
+            <div class="content-container">
+              {{ .Content }}
+            </div>
+            <div class="toc-container">
+              {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            </div>
+
           </div>
           <div class="row items-start justify-between">
             {{ $tags:= .Params.tags }}
@@ -67,11 +74,11 @@
             </div>
           </div>
           <!-- comments -->
-          {{ if site.Config.Services.Disqus.Shortname }}
+          <!-- {{ if site.Config.Services.Disqus.Shortname }}
             <div class="mt-20">
               {{ template "_internal/disqus.html" . }}
             </div>
-          {{ end }}
+          {{ end }} -->
         </article>
       </div>
 

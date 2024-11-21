@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>认证 on 八原妖怪大集合</title>
+    <link>//localhost:1313/tags/%E8%AE%A4%E8%AF%81/</link>
+    <description>Recent content in 认证 on 八原妖怪大集合</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 21 Nov 2024 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E8%AE%A4%E8%AF%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAS认证协议</title>
+      <link>//localhost:1313/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;Centeral Authentication Service&lt;/code&gt; 基于web的单点登录认证协议。它允许一个用户通过一个凭证（如用户名和密码）在多个应用程序中实现身份验证。&lt;code&gt;CAS&lt;/code&gt; 主要用于 &lt;code&gt;web&lt;/code&gt;环境中，它通过提供一个中央服务器来处理认证请求，使得用户只需登录一次，就可以访问多个不同的服务。&lt;/p&gt;&#xA;&lt;h1 id=&#34;概念&#34;&gt;概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;CAS client&lt;/strong&gt;: 需要单点登录访问的应用。&#xA;&lt;strong&gt;CAS server&lt;/strong&gt;：负责处理用户的认证请求并提供一个集中的认证服务，主要功能：认证用户，生成票据，服务票据分发，票据验证。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OIDC认证协议</title>
+      <link>//localhost:1313/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;&#xA;&lt;p&gt;OIDC是基于OAuth2.0的身份认证协议.以下简单介绍下Oauth2.0:&#xA;&lt;a href=&#34;//localhost:1313/blog/auth/oauth2.0-%e6%8e%88%e6%9d%83%e5%8d%8f%e8%ae%ae/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Oauth2.0 授权协议&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;oidc&#34;&gt;OIDC&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;OpenID Connect&lt;/strong&gt; 协议，&lt;strong&gt;允许第三方应用通过统一的认证中心进行身份认证，认证成功之后会返回ID token, 第三方应用可以据此建立会话&lt;/strong&gt;。OIDC在OAuth2.0的基础上进行了身份认证的扩展，Oauth2.0拥有的授权功能，通常OIDC也可以支持。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

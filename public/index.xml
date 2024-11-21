@@ -1,26 +1,61 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugoplate</title>
+    <title>八原妖怪大集合</title>
     <link>//localhost:1313/</link>
-    <description>Recent content on Hugoplate</description>
+    <description>Recent content on 八原妖怪大集合</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2024 05:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CAS认证协议</title>
+      <link>//localhost:1313/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;&#xA;&lt;p&gt;&lt;code&gt;Centeral Authentication Service&lt;/code&gt; 基于web的单点登录认证协议。它允许一个用户通过一个凭证（如用户名和密码）在多个应用程序中实现身份验证。&lt;code&gt;CAS&lt;/code&gt; 主要用于 &lt;code&gt;web&lt;/code&gt;环境中，它通过提供一个中央服务器来处理认证请求，使得用户只需登录一次，就可以访问多个不同的服务。&lt;/p&gt;&#xA;&lt;h1 id=&#34;概念&#34;&gt;概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;CAS client&lt;/strong&gt;: 需要单点登录访问的应用。&#xA;&lt;strong&gt;CAS server&lt;/strong&gt;：负责处理用户的认证请求并提供一个集中的认证服务，主要功能：认证用户，生成票据，服务票据分发，票据验证。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mysql中的字符集</title>
+      <link>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/</guid>
+      <description>&lt;h2 id=&#34;字符集&#34;&gt;字符集&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt;是&lt;strong&gt;Unicode&lt;/strong&gt;的一种实现方式，几乎包含世界上所有字符，方便国际化，通常使用此字符集。&lt;/p&gt;&#xA;&lt;h3 id=&#34;mysql-中的-utf8-和-utf8mb4&#34;&gt;MySQL 中的 utf8 和 utf8mb4&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;UTF8&lt;/strong&gt; 一个字符由 1-6 字节组成，但现在使用的字符最长只有 4 个字节。&lt;strong&gt;MySQL&lt;/strong&gt; 中的 &lt;strong&gt;utf8&lt;/strong&gt; 字符集最多只能存储 3 个字节，因此碰到 4 字节的字符就无法存储，这就是为什么 utf8 字符集的字段无法存储 &lt;strong&gt;emoji&lt;/strong&gt; 表情的原因。&#xA;&lt;strong&gt;utf8mb4&lt;/strong&gt; 是 &lt;strong&gt;utf8&lt;/strong&gt; 的扩展，它可以存储 4 个字节的字符，因此可以存储 &lt;strong&gt;emoji&lt;/strong&gt; 表情。&#xA;如无特殊情况，都应该使用 &lt;strong&gt;utf8mb4&lt;/strong&gt; 字符集，不再使用 &lt;strong&gt;utf8&lt;/strong&gt; 字符集。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Oauth2.0授权协议</title>
       <link>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
       <guid>//localhost:1313/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/</guid>
-      <description>&lt;h1 id=&#34;定义&#34;&gt;定义&lt;/h1&gt;&#xA;&lt;p&gt;OAuth2.0是一种授权协议，&lt;strong&gt;允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源&lt;/strong&gt;,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。&lt;/p&gt;&#xA;&lt;h1 id=&#34;oauth20中的重点概念&#34;&gt;OAuth2.0中的重点概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;资源所有者&lt;/strong&gt;：&lt;strong&gt;Resource Owner(RO)&lt;/strong&gt;： 拥有受保护资源的实体，通常指终端用户。&#xA;&lt;strong&gt;资源服务器&lt;/strong&gt;：&lt;strong&gt;Resource Server（RS）&lt;/strong&gt; 资源的存储位置。&#xA;&lt;strong&gt;客户端&lt;/strong&gt;：&lt;strong&gt;client&lt;/strong&gt; 请求访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权服务器&lt;/strong&gt;：&lt;strong&gt;authorization server(AS)&lt;/strong&gt; 验证资源身份者，颁发令牌。多数情况下授权服务器需要验证资源拥有者身份，授权服务器也要提供认证功能。&#xA;&lt;strong&gt;授权令牌&lt;/strong&gt;: &lt;strong&gt;Access Token（AT）&lt;/strong&gt; 授权服务器提供给客户端访问受保护资源的第三方应用。&#xA;&lt;strong&gt;授权许可&lt;/strong&gt;：&lt;strong&gt;Authorization Grant&lt;/strong&gt; 是资源拥有者授权给客户端的一个凭据，表明资源拥有者同意客户端代表他访问受保护的资源。授权许可的类型包括授权码、隐式授权、资源拥有者密码凭据和客户端凭据。&lt;/p&gt;</description>
+      <description>&lt;h1 id=&#34;定义&#34;&gt;定义&lt;/h1&gt;&#xA;&lt;p&gt;OAuth2.0是一种授权协议，&lt;strong&gt;允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源&lt;/strong&gt;,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。&lt;/p&gt;&#xA;&lt;h1 id=&#34;重点概念&#34;&gt;重点概念&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;资源所有者&lt;/strong&gt;：&lt;strong&gt;Resource Owner(RO)&lt;/strong&gt;： 拥有受保护资源的实体，通常指终端用户。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;资源服务器&lt;/strong&gt;：&lt;strong&gt;Resource Server（RS）&lt;/strong&gt; 资源的存储位置。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OIDC认证协议</title>
+      <link>//localhost:1313/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/</guid>
+      <description>&lt;h1 id=&#34;介绍&#34;&gt;介绍&lt;/h1&gt;&#xA;&lt;p&gt;OIDC是基于OAuth2.0的身份认证协议.以下简单介绍下Oauth2.0:&#xA;&lt;a href=&#34;//localhost:1313/blog/auth/oauth2.0-%e6%8e%88%e6%9d%83%e5%8d%8f%e8%ae%ae/&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;Oauth2.0 授权协议&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;oidc&#34;&gt;OIDC&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;OpenID Connect&lt;/strong&gt; 协议，&lt;strong&gt;允许第三方应用通过统一的认证中心进行身份认证，认证成功之后会返回ID token, 第三方应用可以据此建立会话&lt;/strong&gt;。OIDC在OAuth2.0的基础上进行了身份认证的扩展，Oauth2.0拥有的授权功能，通常OIDC也可以支持。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title></title>
+      <link>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5/</guid>
+      <description></description>
     </item>
     <item>
       <title>Elements</title>
       <link>//localhost:1313/elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/elements/</guid>
-      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      摘要&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ol&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&#xA;      &lt;ol&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-3&#34;&gt;Heading 3&lt;/a&gt;&#xA;          &lt;ol&gt;&#xA;            &lt;li&gt;&lt;a href=&#34;#heading-4&#34;&gt;Heading 4&lt;/a&gt;&#xA;              &lt;ol&gt;&#xA;                &lt;li&gt;&lt;a href=&#34;#heading-5&#34;&gt;Heading 5&lt;/a&gt;&lt;/li&gt;&#xA;              &lt;/ol&gt;&#xA;            &lt;/li&gt;&#xA;          &lt;/ol&gt;&#xA;        &lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#emphasis&#34;&gt;Emphasis&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#button&#34;&gt;Button&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#link&#34;&gt;Link&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#paragraph&#34;&gt;Paragraph&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#ordered-list&#34;&gt;Ordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#unordered-list&#34;&gt;Unordered List&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#notice&#34;&gt;Notice&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tab&#34;&gt;Tab&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#accordions&#34;&gt;Accordions&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#code-and-syntax-highlighting&#34;&gt;Code and Syntax Highlighting&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#blockquote&#34;&gt;Blockquote&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#tables&#34;&gt;Tables&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#image&#34;&gt;Image&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#gallery&#34;&gt;Gallery&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#slider&#34;&gt;Slider&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#youtube-video&#34;&gt;Youtube video&lt;/a&gt;&lt;/li&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#custom-video&#34;&gt;Custom video&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ol&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ol&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
+      <description>&lt;details class=&#34;table-of-content &#34;&gt;&#xA;  &lt;summary&gt;&#xA;    &#xA;      摘要&#xA;    &#xA;  &lt;/summary&gt;&#xA;  &lt;nav id=&#34;TableOfContents&#34;&gt;&#xA;  &lt;ul&gt;&#xA;    &lt;li&gt;&lt;a href=&#34;#heading-1&#34;&gt;Heading 1&lt;/a&gt;&#xA;      &lt;ul&gt;&#xA;        &lt;li&gt;&lt;a href=&#34;#heading-2&#34;&gt;Heading 2&lt;/a&gt;&lt;/li&gt;&#xA;      &lt;/ul&gt;&#xA;    &lt;/li&gt;&#xA;  &lt;/ul&gt;&#xA;&lt;/nav&gt;&#xA;&lt;/details&gt;&#xA;&#xA;&lt;p&gt;Here is an example of headings. You can use this heading by the following markdown rules. For example: use &lt;code&gt;#&lt;/code&gt; for heading 1 and use &lt;code&gt;######&lt;/code&gt; for heading 6.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Privacy</title>
@@ -42,6 +77,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid></guid>
       <description></description>
+    </item>
+    <item>
+      <title>待办事项</title>
+      <link>//localhost:1313/todo/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/todo/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9/</guid>
+      <description>&lt;h2 id=&#34;想看的电影动漫&#34;&gt;想看的电影/动漫&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 精灵王座&lt;/li&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 壁花少年&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 死神&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;想看的书&#34;&gt;想看的书&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 嫌疑人X的献身  &amp;ndash; 2024-11-18&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 危险的维纳斯&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 小王子&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;要学的技术&#34;&gt;要学的技术&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; go&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; spring cloud&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;要做的事&#34;&gt;要做的事&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 整理面试过的题目&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 献血&lt;/li&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 杂谈：游戏与词句&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>技能树</title>
+      <link>//localhost:1313/skill/%E6%8A%80%E8%83%BD%E6%A0%91/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/skill/%E6%8A%80%E8%83%BD%E6%A0%91/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;java基础及JVM&#xA;&lt;ul&gt;&#xA;&lt;li&gt;java内存模型和jvm 模型&lt;/li&gt;&#xA;&lt;li&gt;JVM调优&lt;/li&gt;&#xA;&lt;li&gt;java新特性，java9模块化  &lt;a href=&#34;https://segmentfault.com/a/1190000022654702#item-2-5&#34;&#xA;&#xA;&#xA;&#xA;&#xA; target=&#34;_blank&#34;&#xA; &#xA;&#xA;&#xA;&gt;Java11相对Java8的新特性 - 个人文章 - SegmentFault 思否&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;多线程&lt;/li&gt;&#xA;&lt;li&gt;java 集合&lt;/li&gt;&#xA;&lt;li&gt;NIO&lt;/li&gt;&#xA;&lt;li&gt;java框架&#xA;&lt;ul&gt;&#xA;&lt;li&gt;spring&lt;/li&gt;&#xA;&lt;li&gt;spring session&lt;/li&gt;&#xA;&lt;li&gt;spring mvc&lt;/li&gt;&#xA;&lt;li&gt;spring cloud&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;restful&lt;/li&gt;&#xA;&lt;li&gt;netty&lt;/li&gt;&#xA;&lt;li&gt;endpoint&lt;/li&gt;&#xA;&lt;li&gt;设计模式&lt;/li&gt;&#xA;&lt;li&gt;guava&lt;/li&gt;&#xA;&lt;li&gt;Cassandra&lt;/li&gt;&#xA;&lt;li&gt;maven&lt;/li&gt;&#xA;&lt;li&gt;gradle&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;数据库&#xA;&lt;ul&gt;&#xA;&lt;li&gt;SQL优化&lt;/li&gt;&#xA;&lt;li&gt;mysql&lt;/li&gt;&#xA;&lt;li&gt;redis&lt;/li&gt;&#xA;&lt;li&gt;数据库分库分表&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;分布式&#xA;&lt;ul&gt;&#xA;&lt;li&gt;分布式事务&lt;/li&gt;&#xA;&lt;li&gt;RPC&lt;/li&gt;&#xA;&lt;li&gt;Spring Cloud&lt;/li&gt;&#xA;&lt;li&gt;分布式消息&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;云原生&#xA;&lt;ul&gt;&#xA;&lt;li&gt;docker&lt;/li&gt;&#xA;&lt;li&gt;docker 网络&lt;/li&gt;&#xA;&lt;li&gt;k8s&#xA;&lt;ul&gt;&#xA;&lt;li&gt;statefulset&lt;/li&gt;&#xA;&lt;li&gt;ingress&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;charts helm&lt;/li&gt;&#xA;&lt;li&gt;istio&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;网络&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nginx&lt;/li&gt;&#xA;&lt;li&gt;http&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;安全&#xA;&lt;ul&gt;&#xA;&lt;li&gt;spring security&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;//localhost:1313/blog/auth&#34;&#xA;&#xA;&#xA;&#xA; &#xA;&#xA;&#xA;&gt;认证相关&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;DevOps&#xA;&lt;ul&gt;&#xA;&lt;li&gt;jenkins&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;实用工具&#xA;&lt;ul&gt;&#xA;&lt;li&gt;idea&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;python&lt;/li&gt;&#xA;&lt;li&gt;go&lt;/li&gt;&#xA;&lt;li&gt;lua&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

@@ -81,7 +81,7 @@
 
 
 
-<title>Hugoplate</title>
+<title>八原妖怪大集合</title>
 
 
 
@@ -139,40 +139,6 @@
 
   
   
-    
-    
-      
-    
-
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-      
-        <meta property="og:image" content="//localhost:1313/images/og-image.png" />
-        <meta name="twitter:image" content="//localhost:1313/images/og-image.png" />
-        <meta
-          name="twitter:card"
-          content="summary_large_image" />
-      
-      
-      <meta property="og:image:width" content="900" />
-      <meta property="og:image:height" content="600" />
-    
-
-
-    
-    <meta
-      property="og:image:type"
-      content="image/.png" />
-  
 
 
   
@@ -181,13 +147,13 @@
 
 
 
-<meta property="og:title" content="Hugoplate" />
+<meta property="og:title" content="八原妖怪大集合" />
 <meta property="og:description" content="Hugo &amp; Tailwindcss Starter" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="//localhost:1313/tags/oauth2.0/" />
 
 
-<meta name="twitter:title" content="Hugoplate" />
+<meta name="twitter:title" content="八原妖怪大集合" />
 <meta name="twitter:description" content="Hugo &amp; Tailwindcss Starter" />
 
 
@@ -360,49 +326,6 @@
     
 
 
-  <div id="announcement" class="announcement announcement-hide">
-    You must replace the <strong>baseURL</strong> in <strong>hugo.toml</strong> file when deploying, you can manage this announcement from the <strong>params.toml</strong> file.
-    <button id="announcement-button" class="announcement-button">
-      &times;
-    </button>
-  </div>
-
-  
-  <style>
-    .announcement {
-      position: relative;
-      z-index: 999;
-      padding: 1rem;
-      padding-right: 2.8rem;
-      background-color: #fff;
-      box-shadow: 1px 0px 10px 7px rgba(154, 154, 154, 0.11);
-      font-size: 1.1rem;
-    }
-    .announcement-button {
-      cursor: pointer;
-      padding: 0 0.5rem;
-      border: 0;
-      font-size: 1.3rem;
-      position: absolute;
-      top: 50%;
-      right: 1rem;
-      transform: translateY(-50%);
-      border: 1px solid;
-      border-radius: 50%;
-      height: 1.1em;
-      width: 1.1em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .announcement-hide {
-      display: none;
-    }
-    .dark .announcement {
-      background-color: #222;
-    }
-  </style>
-
 
 
 
@@ -473,9 +396,27 @@
         
         
         
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/skill/%E6%8A%80%E8%83%BD%E6%A0%91"
+              >技能树</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
           <li class="nav-item nav-dropdown group relative">
             <span
               class="nav-link 
+                
+                
+                
+              
                 
                 
                 
@@ -499,6 +440,17 @@
                   <a
                     class="nav-dropdown-link "
                     
+                    href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3">
+                    数据库
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
                     href="/categories">
                     目录
                   </a>
@@ -512,6 +464,70 @@
                     
                     href="/blog/auth">
                     认证相关
+                  </a>
+                </li>
+              
+            </ul>
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              
+              href="/todo/%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9"
+              >待办事项</a
+            >
+          </li>
+        
+      
+        
+        
+        
+        
+          <li class="nav-item nav-dropdown group relative">
+            <span
+              class="nav-link 
+                
+                
+                
+              
+                
+                
+                
+               inline-flex items-center">
+              杂谈
+              <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                <path
+                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+              </svg>
+            </span>
+            <ul
+              class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85">
+                    模仿者
+                  </a>
+                </li>
+              
+                
+                
+                <li class="nav-dropdown-item">
+                  <a
+                    class="nav-dropdown-link "
+                    
+                    href="/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5">
+                    词句
                   </a>
                 </li>
               
@@ -864,9 +880,6 @@
       
       
         
-
-        
-        
         
         
         
@@ -878,35 +891,16 @@
         
 
 
-        <picture>
-          <source
-            
-              srcset="/images/image-placeholder_hu14898866438330350576.webp"
-            
-            media="(max-width: 575px)" />
-          <source
-            
-              srcset="/images/image-placeholder_hu3366426647807776041.webp"
-            
-            media="(max-width: 767px)" />
-          <source
-            
-              srcset="/images/image-placeholder_hu15761394040035298493.webp"
-            
-            media="(max-width: 991px)" />
-          <source
-            
-              srcset="/images/image-placeholder_hu9923120856516670921.webp"
-             />
-          <img
-            
-              loading="lazy" decoding="async"
-              src="/images/image-placeholder_hu10538127647789974651.png"
-            class=" mb-6 w-full rounded img"
-            alt="Oauth2.0授权协议"
-            width="1096"
-            height="480" />
-        </picture>
+        <img
+          
+            src="/images/auth/oauth2.0-header_hu1447148547697464334.webp" loading="lazy"
+            decoding="async" alt="Oauth2.0授权协议"
+          
+
+          class=" mb-6 w-full rounded img"
+          width="476"
+          height="431"
+          onerror="this.onerror='null';this.src='\/images\/auth\/oauth2.0-header.png';" />
       
       
     
@@ -928,7 +922,7 @@
   
     <ul class="mb-4">
       <li class="mr-4 inline-block">
-        <a href="/authors/gavain-juan/">
+        <a href="/about/">
           <i class="fa-regular fa-circle-user mr-2"></i>Gavain Juan
         </a>
       </li>
@@ -936,9 +930,9 @@
         <i class="fa-regular fa-folder mr-1"></i>
         
           <a
-            href="/categories/%e8%ae%a4%e8%af%81/"
+            href="/categories/%e6%8e%88%e6%9d%83/"
             class="ms-1"
-            >认证
+            >授权
               ,
             
           </a>
@@ -969,194 +963,7 @@
     </main>
 
     
-    <footer class="bg-theme-light dark:bg-darkmode-theme-light">
-  <div class="container">
-    <div class="row items-center py-10">
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:text-left">
-        
-        <a
-          class="navbar-brand inline-block"
-          href="/">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-  
-  
-  
-
-
-  
-  
     
-    
-  
-
-
-  
-  
-    
-    
-    
-    
-    
-    
-    
-  
-  
-
-  
-  
-    
-    
-      
-      
-
-
-      
-      
-        
-        
-        
-        
-
-        
-        
-        
-      
-      
-    
-  
-  
-
-  
-    <img
-      fetchpriority="high"
-      decoding="async"
-      class="img img-light"
-      width="160"
-      height="32"
-      src="/images/logo_hu4114262549785978686.webp"
-      alt="Hugoplate"
-      onerror="this.onerror=null;this.src='\/images\/logo_hu7137767845088484273.png';" />
-
-    <img
-      fetchpriority="high"
-      decoding="async"
-      class="img img-dark"
-      width="160"
-      height="32"
-      src="/images/logo-darkmode_hu8742296558546396051.webp"
-      alt="Hugoplate"
-      onerror="this.onerror=null;this.src='\/images\/logo-darkmode_hu4471933895487503573.png';" />
-  
-  
-
-
-        </a>
-      </div>
-      <div class="lg:col-6 mb-8 text-center lg:mb-0">
-        <ul>
-          
-            <li class="m-3 inline-block">
-              <a
-                
-                href="
-                  /about
-                "
-                >关于我</a
-              >
-            </li>
-          
-        </ul>
-      </div>
-      <div class="lg:col-3 mb-8 text-center lg:mb-0 lg:mt-0 lg:text-right">
-        <ul class="social-icons">
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="facebook"
-                rel="nofollow noopener"
-                href="https://www.facebook.com/">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="twitter"
-                rel="nofollow noopener"
-                href="https://twitter.com/">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="github"
-                rel="nofollow noopener"
-                href="https://www.github.com/">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          
-            <li>
-              <a
-                target="_blank"
-                aria-label="linkedin"
-                rel="nofollow noopener"
-                href="https://www.linkedin.com/">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="border-border dark:border-darkmode-border border-t py-7">
-    <div class="text-light dark:text-darkmode-light container text-center">
-      <p>
-        Designed &amp; Developed by <a href="https://zeon.studio"
-
-
-
-
- target="_blank"
- 
-
-
->Zeon Studio</a>
-      </p>
-    </div>
-  </div>
-</footer>
-
 
 
     
@@ -1266,20 +1073,6 @@
 
 
 
-  
-    <script type="application/javascript">
-      const announcementBox = document.getElementById('announcement');
-      const announcementButton = document.getElementById('announcement-button');
-      if (!Cookies.get('announcement-close')) {
-        announcementBox.classList.remove('announcement-hide');
-        announcementButton.onclick = function () {
-          Cookies.set('announcement-close', true, {
-            expires:  7 
-          });
-          announcementBox.classList.add('announcement-hide');
-        };
-      }
-    </script>
   
 
 

@@ -12,6 +12,11 @@ url = "/about"
 weight = 2
 
 [[main]]
+name = "skill"
+url = "/skill"
+weight = 3
+
+[[main]]
 name = "Elements"
 url = "/elements"
 weight = 3

@@ -25,9 +25,13 @@
               {{ end }}
             {{ end }}
           </div>
-          <div class="col-12">
-            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
+          <!-- <div class="col-12">
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "mx-auto main-img lg:!max-w-[1200px]" "DisplayXL" "800x" ) }}
+          </div> -->
+          <div class="mx-auto max-w-full"> <!-- 添加一个容器来限制图片宽度并使其居中 -->
+            {{ partial "image" (dict "Src" .image "Alt" "Banner image" "Loading" "eager" "Class" "main-img lg:max-w-[1200px]" "DisplayXL" "800x" ) }}
           </div>
+
         </div>
       </div>
     </section>

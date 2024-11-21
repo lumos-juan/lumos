@@ -1,25 +1,53 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugoplate</title>
+    <title>Tags on 八原妖怪大集合</title>
     <link>//localhost:1313/tags/</link>
-    <description>Recent content in Tags on Hugoplate</description>
+    <description>Recent content in Tags on 八原妖怪大集合</description>
     <generator>Hugo</generator>
     <language>zh</language>
-    <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 21 Nov 2024 05:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL</title>
+      <link>//localhost:1313/tags/mysql/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/mysql/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Oauth2.0</title>
       <link>//localhost:1313/tags/oauth2.0/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/oauth2.0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OIDC</title>
+      <link>//localhost:1313/tags/oidc/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/oidc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>认证</title>
+      <link>//localhost:1313/tags/%E8%AE%A4%E8%AF%81/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E8%AE%A4%E8%AF%81/</guid>
       <description></description>
     </item>
     <item>
       <title>授权</title>
       <link>//localhost:1313/tags/%E6%8E%88%E6%9D%83/</link>
-      <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/%E6%8E%88%E6%9D%83/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>字符集</title>
+      <link>//localhost:1313/tags/%E5%AD%97%E7%AC%A6%E9%9B%86/</link>
+      <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/%E5%AD%97%E7%AC%A6%E9%9B%86/</guid>
       <description></description>
     </item>
   </channel>
