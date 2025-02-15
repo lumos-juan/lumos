@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu11285212527156944795.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu9880217891310920762.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu290619398646655712.png">
+<link rel="shortcut icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_79c3559174e61a5e.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_4384881fdc2d307e.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_cfffba76e19e8ff2.png">
 
 
 
@@ -888,27 +888,27 @@
         <picture>
           <source
             
-              srcset="/images/auth/OIDC_hu7230529840410065465.webp"
+              srcset="/images/auth/OIDC_hu_684f1e7ee670f2e4.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu5185097812403681354.webp"
+              srcset="/images/auth/OIDC_hu_8182aecbea553b28.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu11478581203717145833.webp"
+              srcset="/images/auth/OIDC_hu_cd5424e74e1fe3db.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu15757945288748608010.webp"
+              srcset="/images/auth/OIDC_hu_b70d93c842ce868.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/auth/OIDC_hu2332489620894887731.png"
+              src="/images/auth/OIDC_hu_27bbe430ec77d536.png"
             class=" w-full rounded img"
             alt="OIDC认证协议"
             width="987"
@@ -982,8 +982,7 @@
 <p><strong>认证</strong>，Authentication，认证的目标是让第三方应用知道当前登录的用户是谁，在OIDC中第三方应用通过ID token能够直接解析出当前登录的用户信息。
 <strong>授权</strong>，Authorization, 授权的目标是知道当前用户能干啥，可以不知道这个用户是谁，在OAuth2.0中用户在认证服务器中认证成功之后，会返回当前用户的Access Token,第三方应用可以拿着Access Token 来换取当前用户所需要的用户资源。</p>
 <blockquote>
-<p>如果当前用户的Access Token 允许访问的资源中包含了用户信息，也可以根据Access Token换取用户信息，但是这种获取用户信息的方式是根据授予的权限访问资源，偏向于授权的概念。</p>
-</blockquote>
+<p>如果当前用户的Access Token 允许访问的资源中包含了用户信息，也可以根据Access Token换取用户信息，但是这种获取用户信息的方式是根据授予的权限访问资源，偏向于授权的概念。</p></blockquote>
 <h1 id="oidc中新增的概念">OIDC中新增的概念</h1>
 <p><strong>ID token</strong>：OIDC认证成功后返回的<a href="https://www.jianshu.com/p/576dbf44b2ae"
 
@@ -997,17 +996,15 @@
 >JWT</a>,里面包含了用户信息
 <strong>身份提供者（Identity Provider, IdP）</strong>:负责用户身份认证并颁发ID token, access token。</p>
 <blockquote>
-<p>相当于OAuth2.0的授权服务器，只是在OAuth 2.0的框架中，授权服务器的主要职责是处理授权请求和颁发访问令牌。它并不直接负责身份认证的过程,但它在实际应用中常常与身份认证过程相结合，与OIDC中的IdP相差不大</p>
-</blockquote>
+<p>相当于OAuth2.0的授权服务器，只是在OAuth 2.0的框架中，授权服务器的主要职责是处理授权请求和颁发访问令牌。它并不直接负责身份认证的过程,但它在实际应用中常常与身份认证过程相结合，与OIDC中的IdP相差不大</p></blockquote>
 <p><strong>第三方应用（Relying Party, RP）</strong>：通过IdP验证身份的应用，对应OAuth2.0的client
 <strong>声明（Claims）</strong>：ID token中包含的字段信息，例如用户的用户名、邮箱、登录时间、令牌的有效期等。这些信息由身份提供者（Identity Provider，IdP）在身份验证过程中生成，并传递给客户端（Relying Party，RP）。</p>
 <blockquote>
 <p>Claims和Scopes
-Scope是客户端在发起授权请求时定义的一系列权限，决定了客户端能够访问用户的哪些信息或资源。OIDC定义了一些标准的Scope，如openid、profile、email等。Claims需要的信息也需要包含在scopes中才能获取到。</p>
-</blockquote>
+Scope是客户端在发起授权请求时定义的一系列权限，决定了客户端能够访问用户的哪些信息或资源。OIDC定义了一些标准的Scope，如openid、profile、email等。Claims需要的信息也需要包含在scopes中才能获取到。</p></blockquote>
 <h1 id="流程">流程</h1>
 <p>OIDC的流程与OAuth2.0基本一致，支持OAuth2.0中的授权码模式，隐式授权模式，密码模式和隐式授权（OIDC1.1弃用，因为会隐式授权id token access token直接返回到前端并不安全）
-<img alt="OIDC授权码流程" src="/images/auth/OIDC%20%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE-OIDC%E6%8E%88%E6%9D%83%E7%A0%81%E6%B5%81%E7%A8%8B.png">
+<img src="/images/auth/OIDC%20%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE-OIDC%E6%8E%88%E6%9D%83%E7%A0%81%E6%B5%81%E7%A8%8B.png" alt="OIDC授权码流程">
 主要区别在于第六步中的响应结果中，相对于OAuth2.0多了ID token</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;access_token&#34;</span>: <span style="color:#e6db74">&#34;ACCESS_TOKEN&#34;</span>,
@@ -1110,18 +1107,10 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
     
   </summary>
   <nav id="TableOfContents">
-  <ul>
-    <li><a href="#介绍">介绍</a>
-      <ul>
-        <li><a href="#oidc">OIDC</a></li>
-        <li><a href="#关于认证和授权的区别">关于认证和授权的区别</a></li>
-      </ul>
-    </li>
-    <li><a href="#oidc中新增的概念">OIDC中新增的概念</a></li>
-    <li><a href="#流程">流程</a></li>
-    <li><a href="#id-token">ID Token</a></li>
-    <li><a href="#参考">参考</a></li>
-  </ul>
+  <ol>
+    <li><a href="#oidc">OIDC</a></li>
+    <li><a href="#关于认证和授权的区别">关于认证和授权的区别</a></li>
+  </ol>
 </nav>
 </details>
 
@@ -1366,7 +1355,7 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
 
         <img
           
-            src="/images/auth/oauth2.0-header_hu1447148547697464334.webp" loading="lazy"
+            src="/images/auth/oauth2.0-header_hu_1a542ec6fa464f5d.webp" loading="lazy"
             decoding="async" alt="Oauth2.0授权协议"
           
 
@@ -1510,31 +1499,31 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
         <picture>
           <source
             
-              srcset="/images/database/mofulu_hu8232057015596729840.webp"
+              srcset="/images/auth/CAS_hu_8e6f6c48d1fd28ef.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/database/mofulu_hu6355908033487344620.webp"
+              srcset="/images/auth/CAS_hu_9a4ae1d9af031398.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/database/mofulu_hu3898605431418079950.webp"
+              srcset="/images/auth/CAS_hu_dc7a7d569723d352.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/database/mofulu_hu17034390687062391568.webp"
+              srcset="/images/auth/CAS_hu_e0f65cc31f172bd9.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/database/mofulu_hu14984340341365345028.png"
+              src="/images/auth/CAS_hu_e9cf6c14498c4bd9.png"
             class=" mb-6 w-full rounded img"
-            alt="mysql中的字符集"
-            width="885"
-            height="649" />
+            alt="CAS认证协议"
+            width="1030"
+            height="615" />
         </picture>
       
       
@@ -1548,12 +1537,12 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
 
   
   <h4 class="mb-3">
-    <a href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/">
-      mysql中的字符集
+    <a href="/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
+      CAS认证协议
     </a>
   </h4>
   
-  <p class="mb-6 text-two-line" >UTF-8是Unicode的一种实现方式，几乎包含世界上所有字符，方便国际化，通常使用此字符集。</p>
+  <p class="mb-6 text-two-line" >Centeral Authentication Service 基于web的单点登录认证协议。它允许一个用户通过一个凭证（如用户名和密码）在多个应用程序中实现身份验证。CAS主要用于web环境中，它通过提供一个中央服务器来处理认证请求，使得用户只需登录一次，就可以访问多个不同的服务。</p>
   
     <ul class="mb-4">
       <li class="mr-4 inline-block">
@@ -1565,24 +1554,24 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
         <i class="fa-regular fa-folder mr-1"></i>
         
           <a
-            href="/categories/%e6%95%b0%e6%8d%ae%e5%ba%93/"
+            href="/categories/%e8%ae%a4%e8%af%81/"
             class="ms-1"
-            >数据库
+            >认证
               ,
             
           </a>
         
           <a
-            href="/categories/mysql/"
+            href="/categories/%e5%8d%8f%e8%ae%ae/"
             class="ms-1"
-            >My SQL
+            >协议
           </a>
         
       </li>
     </ul>
   
   
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/">
+  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
     更多
   </a>
 </div>
@@ -1672,31 +1661,31 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
         <picture>
           <source
             
-              srcset="/images/auth/CAS_hu8052972424349392304.webp"
+              srcset="/images/database/mofulu_hu_9ee67c2375a1c3a8.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/auth/CAS_hu15262852852954018632.webp"
+              srcset="/images/database/mofulu_hu_94a3249ea618cbd0.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/auth/CAS_hu9044490078035581447.webp"
+              srcset="/images/database/mofulu_hu_fa9482c234bef391.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/auth/CAS_hu12417694722230539257.webp"
+              srcset="/images/database/mofulu_hu_2678ec7594ae4a35.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/auth/CAS_hu16007207112156082328.png"
+              src="/images/database/mofulu_hu_7cf37570dc8a2bd3.png"
             class=" mb-6 w-full rounded img"
-            alt="CAS认证协议"
-            width="1030"
-            height="615" />
+            alt="mysql中的字符集"
+            width="885"
+            height="649" />
         </picture>
       
       
@@ -1710,12 +1699,12 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
 
   
   <h4 class="mb-3">
-    <a href="/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
-      CAS认证协议
+    <a href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/">
+      mysql中的字符集
     </a>
   </h4>
   
-  <p class="mb-6 text-two-line" >Centeral Authentication Service 基于web的单点登录认证协议。它允许一个用户通过一个凭证（如用户名和密码）在多个应用程序中实现身份验证。CAS主要用于web环境中，它通过提供一个中央服务器来处理认证请求，使得用户只需登录一次，就可以访问多个不同的服务。</p>
+  <p class="mb-6 text-two-line" >UTF-8是Unicode的一种实现方式，几乎包含世界上所有字符，方便国际化，通常使用此字符集。</p>
   
     <ul class="mb-4">
       <li class="mr-4 inline-block">
@@ -1727,24 +1716,24 @@ Scope是客户端在发起授权请求时定义的一系列权限，决定了客
         <i class="fa-regular fa-folder mr-1"></i>
         
           <a
-            href="/categories/%e8%ae%a4%e8%af%81/"
+            href="/categories/%e6%95%b0%e6%8d%ae%e5%ba%93/"
             class="ms-1"
-            >认证
+            >数据库
               ,
             
           </a>
         
           <a
-            href="/categories/%e5%8d%8f%e8%ae%ae/"
+            href="/categories/mysql/"
             class="ms-1"
-            >协议
+            >My SQL
           </a>
         
       </li>
     </ul>
   
   
-  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/">
     更多
   </a>
 </div>

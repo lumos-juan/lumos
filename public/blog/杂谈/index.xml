@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>杂谈 on 八原妖怪大集合</title>
+    <title>杂谈 on Hugoplate</title>
     <link>//localhost:1313/blog/%E6%9D%82%E8%B0%88/</link>
-    <description>Recent content in 杂谈 on 八原妖怪大集合</description>
+    <description>Recent content in 杂谈 on Hugoplate</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <atom:link href="//localhost:1313/blog/%E6%9D%82%E8%B0%88/index.xml" rel="self" type="application/rss+xml" />

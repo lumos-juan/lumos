@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on 八原妖怪大集合</title>
+    <title>Tags on Hugoplate</title>
     <link>//localhost:1313/tags/</link>
-    <description>Recent content in Tags on 八原妖怪大集合</description>
+    <description>Recent content in Tags on Hugoplate</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 21 Nov 2024 05:00:00 +0000</lastBuildDate>
@@ -48,6 +48,20 @@
       <link>//localhost:1313/tags/%E5%AD%97%E7%AC%A6%E9%9B%86/</link>
       <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
       <guid>//localhost:1313/tags/%E5%AD%97%E7%AC%A6%E9%9B%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mybatis</title>
+      <link>//localhost:1313/tags/mybatis/</link>
+      <pubDate>Thu, 15 Feb 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/mybatis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spring Data Jpa</title>
+      <link>//localhost:1313/tags/spring-data-jpa/</link>
+      <pubDate>Thu, 15 Feb 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/spring-data-jpa/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mybatis on Hugoplate</title>
+    <link>//localhost:1313/categories/mybatis/</link>
+    <description>Recent content in Mybatis on Hugoplate</description>
+    <generator>Hugo</generator>
+    <language>zh</language>
+    <lastBuildDate>Thu, 15 Feb 2024 05:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mybatis与SpringDataJPA的对比</title>
+      <link>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Thu, 15 Feb 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <description>&lt;h1 id=&#34;orm&#34;&gt;ORM&lt;/h1&gt;&#xA;&lt;p&gt;Object Relation Mapping&#xA;用于在面向对象编程语言和关系型数据库之间建立一种映射关系。&#xA;它允许开发人员使用面向对象的方式来操作数据库，而不是直接编写 SQL 语句。&lt;/p&gt;&#xA;&lt;p&gt;Hibernate是基于ORM实现的，Spring Data JPA是基于Hibernate实现的。&#xA;因为mybatis需要编写SQL,但是能够实现查询结果到对象的映射，所以有把mybatis称为半ORM映射的说法。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

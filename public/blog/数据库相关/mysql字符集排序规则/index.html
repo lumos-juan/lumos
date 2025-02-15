@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu11285212527156944795.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu9880217891310920762.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu290619398646655712.png">
+<link rel="shortcut icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_79c3559174e61a5e.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_4384881fdc2d307e.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_cfffba76e19e8ff2.png">
 
 
 
@@ -888,27 +888,27 @@
         <picture>
           <source
             
-              srcset="/images/database/mofulu_hu8232057015596729840.webp"
+              srcset="/images/database/mofulu_hu_9ee67c2375a1c3a8.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/database/mofulu_hu6355908033487344620.webp"
+              srcset="/images/database/mofulu_hu_94a3249ea618cbd0.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/database/mofulu_hu3898605431418079950.webp"
+              srcset="/images/database/mofulu_hu_fa9482c234bef391.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/database/mofulu_hu17034390687062391568.webp"
+              srcset="/images/database/mofulu_hu_2678ec7594ae4a35.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/database/mofulu_hu14984340341365345028.png"
+              src="/images/database/mofulu_hu_7cf37570dc8a2bd3.png"
             class=" w-full rounded img"
             alt="mysql中的字符集"
             width="885"
@@ -1054,17 +1054,30 @@
     
   </summary>
   <nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#字符集">字符集</a></li>
-        <li><a href="#排序规则">排序规则</a></li>
-        <li><a href="#规则解析">规则解析</a></li>
-        <li><a href="#常见字符集">常见字符集</a></li>
-        <li><a href="#参考">参考：</a></li>
-      </ul>
+  <ol>
+    <li><a href="#字符集">字符集</a>
+      <ol>
+        <li><a href="#mysql-中的-utf8-和-utf8mb4">MySQL 中的 utf8 和 utf8mb4</a></li>
+      </ol>
     </li>
-  </ul>
+    <li><a href="#排序规则">排序规则</a>
+      <ol>
+        <li><a href="#是否区分大小写">是否区分大小写</a></li>
+        <li><a href="#是否区分重音">是否区分重音</a></li>
+        <li><a href="#需要区分重音的场景">需要区分重音的场景</a></li>
+        <li><a href="#区分重音的排序规则">区分重音的排序规则</a></li>
+        <li><a href="#示例">示例</a></li>
+      </ol>
+    </li>
+    <li><a href="#规则解析">规则解析</a>
+      <ol>
+        <li><a href="#utf8_general_ci">utf8_general_ci</a></li>
+        <li><a href="#utf8mb4_0900_ai_ci">utf8mb4_0900_ai_ci</a></li>
+      </ol>
+    </li>
+    <li><a href="#常见字符集">常见字符集</a></li>
+    <li><a href="#参考">参考：</a></li>
+  </ol>
 </nav>
 </details>
 
@@ -1234,146 +1247,6 @@
                 <div class="bg-body dark:bg-darkmode-body">
   
   
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-  
-    
-      
-    
-
-
-    
-    
-
-
-    
-    
-      
-      
-    
-    
-    
-
-
-    
-    
-      
-      
-        
-        
-        
-        
-        
-        
-
-
-        
-        
-
-
-        <img
-          
-            src="/images/auth/oauth2.0-header_hu1447148547697464334.webp" loading="lazy"
-            decoding="async" alt="Oauth2.0授权协议"
-          
-
-          class=" mb-6 w-full rounded img"
-          width="476"
-          height="431"
-          onerror="this.onerror='null';this.src='\/images\/auth\/oauth2.0-header.png';" />
-      
-      
-    
-    
-  
-
-
-  
-
-
-  
-  <h4 class="mb-3">
-    <a href="/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/">
-      Oauth2.0授权协议
-    </a>
-  </h4>
-  
-  <p class="mb-6 text-two-line" >OAuth2.0是一种授权协议，**允许第三方应用在用户授权的情况下，在不暴露用户密码给第三方应用的前提下安全地访问服务器资源**,同时可以提供有限的权限范围，限制第三方应用能够访问的资源，提高了安全性。认证成功之后会返回Acces Token，第三方应用可以用Access Token换取所需要的资源。</p>
-  
-    <ul class="mb-4">
-      <li class="mr-4 inline-block">
-        <a href="/about/">
-          <i class="fa-regular fa-circle-user mr-2"></i>Gavain Juan
-        </a>
-      </li>
-      <li class="mr-4 inline-block">
-        <i class="fa-regular fa-folder mr-1"></i>
-        
-          <a
-            href="/categories/%e6%8e%88%e6%9d%83/"
-            class="ms-1"
-            >授权
-              ,
-            
-          </a>
-        
-          <a
-            href="/categories/%e5%8d%8f%e8%ae%ae/"
-            class="ms-1"
-            >协议
-          </a>
-        
-      </li>
-    </ul>
-  
-  
-  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/oauth2.0-%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE/">
-    更多
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
   <h4 class="mb-3">
     <a href="/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/">
       
@@ -1394,16 +1267,320 @@
                 <div class="bg-body dark:bg-darkmode-body">
   
   
-  <h4 class="mb-3">
-    <a href="/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5/">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
       
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/database/labixiaoxin_hu_64fb984b75059876.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/database/labixiaoxin_hu_ad9bef71dc1b1f05.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/database/labixiaoxin_hu_bfb01b3d2037351b.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/database/labixiaoxin_hu_b1a12ffe7fb931f8.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/database/labixiaoxin_hu_1243ee729dead163.png"
+            class=" mb-6 w-full rounded img"
+            alt="mybatis与SpringDataJPA的对比"
+            width="1051"
+            height="519" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/">
+      mybatis与SpringDataJPA的对比
     </a>
   </h4>
   
-  <p class="mb-6 text-two-line" ></p>
+  <p class="mb-6 text-two-line" >除了面试背诵区别之外的一些对比</p>
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/about/">
+          <i class="fa-regular fa-circle-user mr-2"></i>Gavain Juan
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/mybatis/"
+            class="ms-1"
+            >Mybatis
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/spring-data-jpa/"
+            class="ms-1"
+            >Spring data jpa
+          </a>
+        
+      </li>
+    </ul>
   
   
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5/">
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/">
+    更多
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/auth/OIDC_hu_684f1e7ee670f2e4.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_8182aecbea553b28.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_cd5424e74e1fe3db.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_b70d93c842ce868.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/auth/OIDC_hu_27bbe430ec77d536.png"
+            class=" mb-6 w-full rounded img"
+            alt="OIDC认证协议"
+            width="987"
+            height="300" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
+      OIDC认证协议
+    </a>
+  </h4>
+  
+  <p class="mb-6 text-two-line" >OpenID Connect协议，允许第三方应用通过统一的认证中心进行身份认证，认证成功之后会返回ID token, 第三方应用可以据此建立会话。OIDC在OAuth2.0的基础上进行了身份认证的扩展，Oauth2.0拥有的授权功能，通常OIDC也可以支持。</p>
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/about/">
+          <i class="fa-regular fa-circle-user mr-2"></i>Gavain Juan
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/%e8%ae%a4%e8%af%81/"
+            class="ms-1"
+            >认证
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/%e5%8d%8f%e8%ae%ae/"
+            class="ms-1"
+            >协议
+          </a>
+        
+      </li>
+    </ul>
+  
+  
+  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
     更多
   </a>
 </div>

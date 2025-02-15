@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>数据库 on 八原妖怪大集合</title>
+    <title>数据库 on Hugoplate</title>
     <link>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/</link>
-    <description>Recent content in 数据库 on 八原妖怪大集合</description>
+    <description>Recent content in 数据库 on Hugoplate</description>
     <generator>Hugo</generator>
     <language>zh</language>
     <lastBuildDate>Thu, 21 Nov 2024 05:00:00 +0000</lastBuildDate>
@@ -14,6 +14,13 @@
       <pubDate>Thu, 21 Nov 2024 05:00:00 +0000</pubDate>
       <guid>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mysql%E5%AD%97%E7%AC%A6%E9%9B%86%E6%8E%92%E5%BA%8F%E8%A7%84%E5%88%99/</guid>
       <description>&lt;h2 id=&#34;字符集&#34;&gt;字符集&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt;是&lt;strong&gt;Unicode&lt;/strong&gt;的一种实现方式，几乎包含世界上所有字符，方便国际化，通常使用此字符集。&lt;/p&gt;&#xA;&lt;h3 id=&#34;mysql-中的-utf8-和-utf8mb4&#34;&gt;MySQL 中的 utf8 和 utf8mb4&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;UTF8&lt;/strong&gt; 一个字符由 1-6 字节组成，但现在使用的字符最长只有 4 个字节。&lt;strong&gt;MySQL&lt;/strong&gt; 中的 &lt;strong&gt;utf8&lt;/strong&gt; 字符集最多只能存储 3 个字节，因此碰到 4 字节的字符就无法存储，这就是为什么 utf8 字符集的字段无法存储 &lt;strong&gt;emoji&lt;/strong&gt; 表情的原因。&#xA;&lt;strong&gt;utf8mb4&lt;/strong&gt; 是 &lt;strong&gt;utf8&lt;/strong&gt; 的扩展，它可以存储 4 个字节的字符，因此可以存储 &lt;strong&gt;emoji&lt;/strong&gt; 表情。&#xA;如无特殊情况，都应该使用 &lt;strong&gt;utf8mb4&lt;/strong&gt; 字符集，不再使用 &lt;strong&gt;utf8&lt;/strong&gt; 字符集。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>mybatis与SpringDataJPA的对比</title>
+      <link>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/</link>
+      <pubDate>Thu, 15 Feb 2024 05:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/</guid>
+      <description>&lt;h1 id=&#34;orm&#34;&gt;ORM&lt;/h1&gt;&#xA;&lt;p&gt;Object Relation Mapping&#xA;用于在面向对象编程语言和关系型数据库之间建立一种映射关系。&#xA;它允许开发人员使用面向对象的方式来操作数据库，而不是直接编写 SQL 语句。&lt;/p&gt;&#xA;&lt;p&gt;Hibernate是基于ORM实现的，Spring Data JPA是基于Hibernate实现的。&#xA;因为mybatis需要编写SQL,但是能够实现查询结果到对象的映射，所以有把mybatis称为半ORM映射的说法。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

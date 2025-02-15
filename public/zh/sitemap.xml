@@ -95,11 +95,26 @@
     <loc>//localhost:1313/tags/%E5%AD%97%E7%AC%A6%E9%9B%86/</loc>
     <lastmod>2024-11-21T05:00:00+00:00</lastmod>
   </url><url>
+    <loc>//localhost:1313/tags/mybatis/</loc>
+    <lastmod>2024-02-15T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/mybatis/</loc>
+    <lastmod>2024-02-15T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/</loc>
+    <lastmod>2024-02-15T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/tags/spring-data-jpa/</loc>
+    <lastmod>2024-02-15T05:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:1313/categories/spring-data-jpa/</loc>
+    <lastmod>2024-02-15T05:00:00+00:00</lastmod>
+  </url><url>
     <loc>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/</loc>
   </url><url>
     <loc>//localhost:1313/blog/%E6%9D%82%E8%B0%88/%E8%AF%8D%E5%8F%A5/</loc>
   </url><url>
-    <loc>//localhost:1313/elements/</loc>
+    <loc>//localhost:1313/contact/</loc>
   </url><url>
     <loc>//localhost:1313/about/</loc>
   </url><url>

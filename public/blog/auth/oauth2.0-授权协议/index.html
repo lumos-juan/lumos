@@ -30,11 +30,11 @@
 
 
 
-<link rel="shortcut icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" href="/images/favicon_hu9880217891310920762.png" type="image/x-icon">
-<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu11285212527156944795.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu9880217891310920762.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu290619398646655712.png">
+<link rel="shortcut icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon_hu_4384881fdc2d307e.png" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="48x48" href="/images/favicon_hu_79c3559174e61a5e.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon_hu_4384881fdc2d307e.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon_hu_cfffba76e19e8ff2.png">
 
 
 
@@ -884,7 +884,7 @@
 
         <img
           
-            src="/images/auth/oauth2.0-header_hu1447148547697464334.webp" loading="lazy"
+            src="/images/auth/oauth2.0-header_hu_1a542ec6fa464f5d.webp" loading="lazy"
             decoding="async" alt="Oauth2.0授权协议"
           
 
@@ -954,7 +954,7 @@
 <p><strong>授权令牌</strong>: <strong>Access Token（AT）</strong> 授权服务器提供给客户端访问受保护资源的第三方应用。</p>
 <p><strong>授权许可</strong>：<strong>Authorization Grant</strong> 是资源拥有者授权给客户端的一个凭据，表明资源拥有者同意客户端代表他访问受保护的资源。授权许可的类型包括授权码、隐式授权、资源拥有者密码凭据和客户端凭据。</p>
 <h2 id="整体流程">整体流程</h2>
-<p><img alt="oauth2.0" src="/images/auth/2-Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B.png"></p>
+<p><img src="/images/auth/2-Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E6%95%B4%E4%BD%93%E6%B5%81%E7%A8%8B.png" alt="oauth2.0"></p>
 <ol>
 <li>当第三方客户端 <code>client</code>需要访问资源拥有者 <code>RO</code>所拥有的资源的时候，向用户发出授权许可 <code>Authorization Grant</code>；</li>
 <li>资源拥有者RO批准授权，将授权许可返回给第三方客户端；</li>
@@ -971,7 +971,7 @@
 <h3 id="概念">概念</h3>
 <p>授权码流程是最常见的一种。使用的授权许可 <code>Authorization Grant</code>是授权码 <code>Authorization Code</code>，授权码在前端传递，有效期很短且单次有效，第三方应用后台服务获取到后授权码后，携带着客户端凭据和授权码到授权中心换取访问令牌 <code>Access Token</code>，再拿着访问令牌换取资源。</p>
 <h3 id="流程">流程</h3>
-<p><img alt="授权码流程" src="/images/auth/1-Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E6%8E%88%E6%9D%83%E7%A0%81%E6%B5%81%E7%A8%8B.png">
+<p><img src="/images/auth/1-Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E6%8E%88%E6%9D%83%E7%A0%81%E6%B5%81%E7%A8%8B.png" alt="授权码流程">
 流程与OAuth2.0整体流程相似，关注点主要在：
 第二步重定向到授权服务器地址的时候需要携带的参数：</p>
 <ul>
@@ -1035,7 +1035,7 @@
 <h2 id="隐式授权">隐式授权</h2>
 <p>隐式（implicit）授权 ,不会生成授权码，<strong>会直接返回access token到前端</strong>,使用较少。</p>
 <h3 id="流程-1">流程</h3>
-<p><img alt="隐式流" src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E9%9A%90%E5%BC%8F%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B.png">
+<p><img src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E9%9A%90%E5%BC%8F%E6%8E%88%E6%9D%83%E6%B5%81%E7%A8%8B.png" alt="隐式流">
 与授权码授权相比，隐式授权不返回授权码，直接返回了Access Token ,少了拿授权码换取Access Token的步骤。
 重点关注的还是第二步：
 第三方应用将用户浏览器重定向到授权服务器，并在请求中包含以下参数：</p>
@@ -1073,7 +1073,7 @@
 <h2 id="密码授权">密码授权</h2>
 <p>密码模式授权，直接将用户名密码交给第三方应用。这种方式不符合OAuth2.0的原则：第三方应用不应该拥有用户的凭证，增加了凭证泄露的风险。</p>
 <h3 id="流程-2">流程</h3>
-<p><img alt="密码模式" src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E5%AF%86%E7%A0%81%E6%A8%A1%E5%BC%8F.png">
+<p><img src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E5%AF%86%E7%A0%81%E6%A8%A1%E5%BC%8F.png" alt="密码模式">
 步骤上重点在于第二步，第三方应用需要拿着用户的用户名密码去请求token。</p>
 <p><strong>请求示例</strong>：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> /token <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
@@ -1102,7 +1102,7 @@
 <h2 id="凭证授权">凭证授权</h2>
 <p>凭证（Client Credentials）授权主要用于服务器间通信的场景，适用于后台服务需要访问受保护的资源，不涉及到具体用户的资源访问，这部分资源应该是归属于后台服务的。</p>
 <h3 id="流程-3">流程</h3>
-<p><img alt="凭证授权" src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E5%87%AD%E8%AF%81%E6%8E%88%E6%9D%83.png">
+<p><img src="/images/auth/Oauth2.0%20%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE-%E5%87%AD%E8%AF%81%E6%8E%88%E6%9D%83.png" alt="凭证授权">
 重点关注第二步，客户端使用其 client_id 和 client_secret 向授权服务器发送请求，请求一个访问令牌。这个请求通常不需要用户参与。</p>
 <p><strong>请求示例</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-http" data-lang="http"><span style="display:flex;"><span><span style="color:#a6e22e">POST</span> /token <span style="color:#66d9ef">HTTP</span><span style="color:#f92672">/</span><span style="color:#ae81ff">1.1</span>
@@ -1279,25 +1279,38 @@
     
   </summary>
   <nav id="TableOfContents">
-  <ul>
-    <li><a href="#定义">定义</a></li>
-    <li><a href="#重点概念">重点概念</a>
-      <ul>
-        <li><a href="#整体流程">整体流程</a></li>
-      </ul>
+  <ol>
+    <li><a href="#整体流程">整体流程</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#新增概念">新增概念</a></li>
+    <li><a href="#授权码授权">授权码授权</a>
+      <ol>
+        <li><a href="#概念">概念</a></li>
+        <li><a href="#流程">流程</a></li>
+        <li><a href="#优缺点使用场景">优缺点&amp;使用场景</a></li>
+      </ol>
     </li>
-    <li><a href="#四种授权方式">四种授权方式</a>
-      <ul>
-        <li><a href="#新增概念">新增概念</a></li>
-        <li><a href="#授权码授权">授权码授权</a></li>
-        <li><a href="#隐式授权">隐式授权</a></li>
-        <li><a href="#密码授权">密码授权</a></li>
-        <li><a href="#凭证授权">凭证授权</a></li>
-      </ul>
+    <li><a href="#隐式授权">隐式授权</a>
+      <ol>
+        <li><a href="#流程-1">流程</a></li>
+        <li><a href="#优缺点适用场景">优缺点&amp;&amp;适用场景</a></li>
+      </ol>
     </li>
-    <li><a href="#refresh-token">refresh token</a></li>
-    <li><a href="#参考">参考</a></li>
-  </ul>
+    <li><a href="#密码授权">密码授权</a>
+      <ol>
+        <li><a href="#流程-2">流程</a></li>
+        <li><a href="#优缺点适用场景-1">优缺点&amp;适用场景</a></li>
+      </ol>
+    </li>
+    <li><a href="#凭证授权">凭证授权</a>
+      <ol>
+        <li><a href="#流程-3">流程</a></li>
+        <li><a href="#优缺点适用场景-2">优缺点&amp;适用场景</a></li>
+      </ol>
+    </li>
+  </ol>
 </nav>
 </details>
 
@@ -1546,31 +1559,31 @@
         <picture>
           <source
             
-              srcset="/images/auth/OIDC_hu7230529840410065465.webp"
+              srcset="/images/database/labixiaoxin_hu_64fb984b75059876.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu5185097812403681354.webp"
+              srcset="/images/database/labixiaoxin_hu_ad9bef71dc1b1f05.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu11478581203717145833.webp"
+              srcset="/images/database/labixiaoxin_hu_bfb01b3d2037351b.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/auth/OIDC_hu15757945288748608010.webp"
+              srcset="/images/database/labixiaoxin_hu_b1a12ffe7fb931f8.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/auth/OIDC_hu2332489620894887731.png"
+              src="/images/database/labixiaoxin_hu_1243ee729dead163.png"
             class=" mb-6 w-full rounded img"
-            alt="OIDC认证协议"
-            width="987"
-            height="300" />
+            alt="mybatis与SpringDataJPA的对比"
+            width="1051"
+            height="519" />
         </picture>
       
       
@@ -1584,12 +1597,12 @@
 
   
   <h4 class="mb-3">
-    <a href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
-      OIDC认证协议
+    <a href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/">
+      mybatis与SpringDataJPA的对比
     </a>
   </h4>
   
-  <p class="mb-6 text-two-line" >OpenID Connect协议，允许第三方应用通过统一的认证中心进行身份认证，认证成功之后会返回ID token, 第三方应用可以据此建立会话。OIDC在OAuth2.0的基础上进行了身份认证的扩展，Oauth2.0拥有的授权功能，通常OIDC也可以支持。</p>
+  <p class="mb-6 text-two-line" >除了面试背诵区别之外的一些对比</p>
   
     <ul class="mb-4">
       <li class="mr-4 inline-block">
@@ -1601,44 +1614,24 @@
         <i class="fa-regular fa-folder mr-1"></i>
         
           <a
-            href="/categories/%e8%ae%a4%e8%af%81/"
+            href="/categories/mybatis/"
             class="ms-1"
-            >认证
+            >Mybatis
               ,
             
           </a>
         
           <a
-            href="/categories/%e5%8d%8f%e8%ae%ae/"
+            href="/categories/spring-data-jpa/"
             class="ms-1"
-            >协议
+            >Spring data jpa
           </a>
         
       </li>
     </ul>
   
   
-  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
-    更多
-  </a>
-</div>
-
-              </div>
-            
-              <div class="lg:col-4 md:col-6 mb-14">
-                <div class="bg-body dark:bg-darkmode-body">
-  
-  
-  <h4 class="mb-3">
-    <a href="/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/">
-      
-    </a>
-  </h4>
-  
-  <p class="mb-6 text-two-line" ></p>
-  
-  
-  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%9D%82%E8%B0%88/%E6%A8%A1%E4%BB%BF%E8%80%85/">
+  <a class="btn btn-outline-primary btn-sm" href="/blog/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3/mybatis%E4%B8%8Espring-data-jpa%E7%9A%84%E5%AF%B9%E6%AF%94/">
     更多
   </a>
 </div>
@@ -1728,27 +1721,27 @@
         <picture>
           <source
             
-              srcset="/images/auth/CAS_hu8052972424349392304.webp"
+              srcset="/images/auth/CAS_hu_8e6f6c48d1fd28ef.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/images/auth/CAS_hu15262852852954018632.webp"
+              srcset="/images/auth/CAS_hu_9a4ae1d9af031398.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/images/auth/CAS_hu9044490078035581447.webp"
+              srcset="/images/auth/CAS_hu_dc7a7d569723d352.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/images/auth/CAS_hu12417694722230539257.webp"
+              srcset="/images/auth/CAS_hu_e0f65cc31f172bd9.webp"
              />
           <img
             
               loading="lazy" decoding="async"
-              src="/images/auth/CAS_hu16007207112156082328.png"
+              src="/images/auth/CAS_hu_e9cf6c14498c4bd9.png"
             class=" mb-6 w-full rounded img"
             alt="CAS认证协议"
             width="1030"
@@ -1801,6 +1794,168 @@
   
   
   <a class="btn btn-outline-primary btn-sm" href="/blog/auth/cas-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
+    更多
+  </a>
+</div>
+
+              </div>
+            
+              <div class="lg:col-4 md:col-6 mb-14">
+                <div class="bg-body dark:bg-darkmode-body">
+  
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  
+    
+      
+    
+
+
+    
+    
+
+
+    
+    
+      
+      
+    
+    
+    
+
+
+    
+    
+      
+      
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+
+        
+        
+
+
+        <picture>
+          <source
+            
+              srcset="/images/auth/OIDC_hu_684f1e7ee670f2e4.webp"
+            
+            media="(max-width: 575px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_8182aecbea553b28.webp"
+            
+            media="(max-width: 767px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_cd5424e74e1fe3db.webp"
+            
+            media="(max-width: 991px)" />
+          <source
+            
+              srcset="/images/auth/OIDC_hu_b70d93c842ce868.webp"
+             />
+          <img
+            
+              loading="lazy" decoding="async"
+              src="/images/auth/OIDC_hu_27bbe430ec77d536.png"
+            class=" mb-6 w-full rounded img"
+            alt="OIDC认证协议"
+            width="987"
+            height="300" />
+        </picture>
+      
+      
+    
+    
+  
+
+
+  
+
+
+  
+  <h4 class="mb-3">
+    <a href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
+      OIDC认证协议
+    </a>
+  </h4>
+  
+  <p class="mb-6 text-two-line" >OpenID Connect协议，允许第三方应用通过统一的认证中心进行身份认证，认证成功之后会返回ID token, 第三方应用可以据此建立会话。OIDC在OAuth2.0的基础上进行了身份认证的扩展，Oauth2.0拥有的授权功能，通常OIDC也可以支持。</p>
+  
+    <ul class="mb-4">
+      <li class="mr-4 inline-block">
+        <a href="/about/">
+          <i class="fa-regular fa-circle-user mr-2"></i>Gavain Juan
+        </a>
+      </li>
+      <li class="mr-4 inline-block">
+        <i class="fa-regular fa-folder mr-1"></i>
+        
+          <a
+            href="/categories/%e8%ae%a4%e8%af%81/"
+            class="ms-1"
+            >认证
+              ,
+            
+          </a>
+        
+          <a
+            href="/categories/%e5%8d%8f%e8%ae%ae/"
+            class="ms-1"
+            >协议
+          </a>
+        
+      </li>
+    </ul>
+  
+  
+  <a class="btn btn-outline-primary btn-sm" href="/blog/auth/oidc-%E8%AE%A4%E8%AF%81%E5%8D%8F%E8%AE%AE/">
     更多
   </a>
 </div>

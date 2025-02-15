@@ -106,7 +106,7 @@
   --tw-contain-style:  ;
 }
 /*
-! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com
 */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -1799,9 +1799,6 @@ input#nav-toggle:checked ~ #nav-menu{
 .mb-8{
   margin-bottom: 2rem;
 }
-.ml-0{
-  margin-left: 0px;
-}
 .ml-2{
   margin-left: 0.5rem;
 }
@@ -1847,9 +1844,6 @@ input#nav-toggle:checked ~ #nav-menu{
 .inline-flex{
   display: inline-flex;
 }
-.table{
-  display: table;
-}
 .hidden{
   display: none;
 }
@@ -1864,9 +1858,6 @@ input#nav-toggle:checked ~ #nav-menu{
 }
 .w-full{
   width: 100%;
-}
-.max-w-\[600px\]{
-  max-width: 600px;
 }
 .max-w-full{
   max-width: 100%;
@@ -1909,9 +1900,6 @@ input#nav-toggle:checked ~ #nav-menu{
 }
 .rounded-2xl{
   border-radius: 1rem;
-}
-.rounded-lg{
-  border-radius: 0.5rem;
 }
 .border-r{
   border-right-width: 1px;
@@ -2033,9 +2021,6 @@ input#nav-toggle:checked ~ #nav-menu{
 }
 .rounded{
   border-radius: 6px;
-}
-.rounded-lg{
-  border-radius: 12px;
 }
 
 .search-wrapper {
